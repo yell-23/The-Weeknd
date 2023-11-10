@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.hover_underline {
+  position: relative;
+}
+.hover_underline ::after {
+  content: "";
+  position: absolute;
+  background-color: #BE2623;
+  height: 2px;
+  width: 0px;
+  bottom: -3px;
+  left: 0;
+  transition: 0.60s all;
+}
+.hover_underline:hover ::after {
+  width: 100%;
+}
+*{
+  scroll-behavior: smooth;
+}
